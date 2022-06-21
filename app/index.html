@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Network</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <input type="text" class="header__search" placeholder="Search" />
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="list__item">
+                <a href="#" class="list__link list__link-user">
+                  <img
+                    class="list__user-icon"
+                    src="./images/content/user.png"
+                    alt="user icon"
+                  />
+                  <span class="list__user">Mateusz</span>
+                </a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__link"
+                  ><img
+                    src="./images/icons/add-friends.svg"
+                    alt="add friend icon"
+                  />
+                </a>
+              </li>
+              <li class="list__item list__item-notifications">
+                <a href="#" class="list__link"
+                  ><img
+                    src="./images/icons/notifications.svg"
+                    alt="notification icon"
+                  />
+                  <span class="list__link-number">0</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="container">
+        <div class="main__inner">
+          <aside class="nav-menu">
+            <div class="nav-user">
+              <img
+                class="nav-user__icon"
+                src="./images/content/user.png"
+                alt="user"
+              />
+              <p class="nav-user__name">Mateusz Wierzbicki</p>
+            </div>
+            <button class="nav-menu__toggle">
+              <span></span>
+            </button>
+            <div class="nav-menu__wrapper">
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">
+                      <img
+                        class="menu__item-icon"
+                        src="./images/icons/news-feed.svg"
+                        alt="news-feed"
+                      />
+                      <span class="menu__item-text">News Feed</span>
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">
+                      <img
+                        class="menu__item-icon"
+                        src="./images/icons/message.svg"
+                        alt="message"
+                      />
+                      <span class="menu__item-text">Messages</span>
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">
+                      <img
+                        class="menu__item-icon"
+                        src="./images/icons/marketplace.svg"
+                        alt="marketplace"
+                      />
+                      <span class="menu__item-text">Marketplace</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="shortcuts-box">
+                <h4 class="shortcuts__title special-title">Shortcuts</h4>
+                <nav class="shortcuts">
+                  <ul class="shortcuts__list">
+                    <li class="shortcuts__item">
+                      <a class="shortcuts__link" href="#">
+                        <img
+                          class="shortcuts__item-icon"
+                          src="./images/icons/product-design.svg"
+                          alt="shortcut icon"
+                        />
+                        <span class="shortcuts__item-text">Product Design</span>
+                      </a>
+                    </li>
+                    <li class="shortcuts__item">
+                      <a class="shortcuts__link" href="#">
+                        <img
+                          class="shortcuts__item-icon"
+                          src="./images/icons/product-design.svg"
+                          alt="shortcut icon"
+                        />
+                        <span class="shortcuts__item-text">UX & UI</span>
+                      </a>
+                    </li>
+                    <li class="shortcuts__item">
+                      <a class="shortcuts__link" href="#">
+                        <img
+                          class="shortcuts__item-icon"
+                          src="./images/icons/product-design.svg"
+                          alt="shortcut icon"
+                        />
+                        <span class="shortcuts__item-text">Figma</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <div class="explore-box">
+                <h4 class="explore__title special-title">Explore</h4>
+                <nav class="explore">
+                  <ul class="explore__list">
+                    <li class="explore__item">
+                      <a class="explore__link" href="#">
+                        <img
+                          class="explore__item-icon"
+                          src="./images/icons/pages.svg"
+                          alt="shortcut icon"
+                        />
+                        <span class="explore__item-text">Product Design</span>
+                      </a>
+                    </li>
+                    <li class="explore__item">
+                      <a class="explore__link" href="#">
+                        <img
+                          class="explore__item-icon"
+                          src="./images/icons/groups.svg"
+                          alt="shortcut icon"
+                        />
+                        <span class="explore__item-text">UX & UI</span>
+                      </a>
+                    </li>
+                    <li class="explore__item">
+                      <a class="explore__link" href="#">
+                        <img
+                          class="explore__item-icon"
+                          src="./images/icons/events.svg"
+                          alt="shortcut icon"
+                        />
+                        <span class="explore__item-text">Figma</span>
+                      </a>
+                    </li>
+                    <li class="explore__item">
+                      <a class="explore__link" href="#">
+                        <img
+                          class="explore__item-icon"
+                          src="./images/icons/games.svg"
+                          alt="shortcut icon"
+                        />
+                        <span class="explore__item-text">Games</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </aside>
+          <div class="posts">
+            <div class="container">
+              <div class="posts__inner">
+                <div class="post">
+                  <div class="post__top">
+                    <div class="post__top-user">
+                      <img
+                        class="post__top-img"
+                        src="./images/content/user-big.png"
+                        alt="user image"
+                      />
+                      <div class="post__top-about">
+                        <span class="post__top-name">Mateusz Wierzbicki</span>
+                        <span class="post__top-hour">5 hr</span>
+                      </div>
+                    </div>
+                    <img
+                      class="post__details"
+                      src="./images/icons/details.svg"
+                      alt="details"
+                    />
+                  </div>
+                  <p class="post__descr">Have you enjoyed your holiday?</p>
+                  <p class="post__more">
+                    Read more:
+                    <a class="post__more--link" href="#"
+                      >https://aboutindonesia.com</a
+                    >
+                  </p>
+                  <img
+                    class="post__image"
+                    src="./images/content/post-2.jpg"
+                    alt="post image"
+                  />
+                  <div class="likes">
+                    <img
+                      src="./images/icons/like.svg"
+                      alt="like icon"
+                      class="likes__icon"
+                    />
+                    <span class="likes__count"> 44 </span>
+                  </div>
+                  <ul class="post__list">
+                    <li class="post__item">
+                      <a class="post__link" href="#">
+                        <img
+                          class="post__item-icon"
+                          src="./images/icons/like-big.svg"
+                          alt="like icon"
+                        />
+                        <span class="post__item-text"> Like </span>
+                      </a>
+                    </li>
+                    <li class="post__item">
+                      <a class="post__link" href="#">
+                        <img
+                          class="post__item-icon"
+                          src="./images/icons/comment.svg"
+                          alt="comment"
+                        />
+                        <span class="post__item-text"> Comment </span>
+                      </a>
+                    </li>
+                    <li class="post__item">
+                      <a class="post__link" href="#">
+                        <img
+                          class="post__item-icon"
+                          src="./images/icons/share.svg"
+                          alt="share"
+                        />
+                        <span class="post__item-text"> Share </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="post">
+                  <div class="post__top">
+                    <div class="post__top-user">
+                      <img
+                        class="post__top-img"
+                        src="./images/content/user-big.png"
+                        alt="user image"
+                      />
+                      <div class="post__top-about">
+                        <span class="post__top-name">Mateusz Wierzbicki</span>
+                        <span class="post__top-hour">3 hr</span>
+                      </div>
+                    </div>
+                    <img
+                      class="post__details"
+                      src="./images/icons/details.svg"
+                      alt="details"
+                    />
+                  </div>
+                  <p class="post__descr">
+                    Did you know that all of this was made using only components
+                    and styles from Ant Desing System for Figma?
+                  </p>
+                  <p class="post__more">
+                    Learn more:
+                    <a class="post__more--link" href="#"
+                      >https://antforfigma.com</a
+                    >
+                  </p>
+                  <img
+                    class="post__image"
+                    src="./images/content/post.jpg"
+                    alt="post image"
+                  />
+                  <div class="likes">
+                    <img
+                      src="./images/icons/like.svg"
+                      alt="like icon"
+                      class="likes__icon"
+                    />
+                    <span class="likes__count"> 23 </span>
+                  </div>
+                  <ul class="post__list">
+                    <li class="post__item">
+                      <a class="post__link" href="#">
+                        <img
+                          class="post__item-icon"
+                          src="./images/icons/like-big.svg"
+                          alt="like icon"
+                        />
+                        <span class="post__item-text"> Like </span>
+                      </a>
+                    </li>
+                    <li class="post__item">
+                      <a class="post__link" href="#">
+                        <img
+                          class="post__item-icon"
+                          src="./images/icons/comment.svg"
+                          alt="comment"
+                        />
+                        <span class="post__item-text"> Comment </span>
+                      </a>
+                    </li>
+                    <li class="post__item">
+                      <a class="post__link" href="#">
+                        <img
+                          class="post__item-icon"
+                          src="./images/icons/share.svg"
+                          alt="share"
+                        />
+                        <span class="post__item-text"> Share </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <aside class="stories">
+              <div class="stories__top">
+                <p class="stories__top-text">Stories</p>
+                <img
+                  class="post__details"
+                  src="./images/icons/details.svg"
+                  alt="details"
+                />
+              </div>
+              <ul class="stories__list">
+                <li class="stories__item">
+                  <a class="stories__link" href="#">
+                    <img
+                      class="stories__item-img"
+                      src="./images/content/add.svg"
+                      alt="add"
+                    />
+                    <div class="stories__details">
+                      <p class="stories__item-name">Mateusz Wierzbicki</p>
+                      <p class="stories__date">12 April</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="stories__item">
+                  <a class="stories__link" href="#">
+                    <img
+                      class="stories__item-img"
+                      src="./images/content/stories-user-2.png"
+                      alt="add"
+                    />
+                    <div class="stories__details">
+                      <p class="stories__item-name">Mateusz Wierzbicki</p>
+                      <p class="stories__date">12 April</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="stories__item">
+                  <a class="stories__link" href="#">
+                    <img
+                      class="stories__item-img"
+                      src="./images/content/stories-user-3.png"
+                      alt="add"
+                    />
+                    <div class="stories__details">
+                      <p class="stories__item-name">Mateusz Wierzbicki</p>
+                      <p class="stories__date">12 April</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="stories__item">
+                  <a class="stories__link" href="#">
+                    <img
+                      class="stories__item-img"
+                      src="./images/content/stories-user-4.png"
+                      alt="add"
+                    />
+                    <div class="stories__details">
+                      <p class="stories__item-name">Mateusz Wierzbicki</p>
+                      <p class="stories__date">12 April</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="stories__item">
+                  <a class="stories__link" href="#">
+                    <img
+                      class="stories__item-img"
+                      src="./images/content/stories-user.png"
+                      alt="add"
+                    />
+                    <div class="stories__details">
+                      <p class="stories__item-name">Mateusz Wierzbicki</p>
+                      <p class="stories__date">12 April</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </aside>
+            <aside class="events">
+              <div class="events__top">
+                <p class="events__top-text">Events</p>
+                <img
+                  class="post__details"
+                  src="./images/icons/details.svg"
+                  alt="details"
+                />
+              </div>
+              <ul class="events__list">
+                <li class="events__item">
+                  <img
+                    class="events__item-img"
+                    src="./images/icons/gift.svg"
+                    alt="gift"
+                  />
+                  <span class="events__item-text">
+                    John Doe’s birthday is today
+                  </span>
+                </li>
+                <li class="events__item">
+                  <img
+                    class="events__item-img"
+                    src="./images/icons/gift.svg"
+                    alt="gift"
+                  />
+                  <span class="events__item-text">
+                    John Doe’s birthday is today
+                  </span>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
